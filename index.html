@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>VanillaJS・TodoMVC</title>
+        <link rel="stylesheet" type="text/css" href="./index.css">
+        <script type="text/javascript" src="./todos.js"></script>
+    </head>
+    <body>
+        <p id="title">todos</p>
+        <table id="todolist">
+            <tr>
+                <th id="check">
+                    <p></p>
+                </th>
+                <th id="todos">
+                    <form method="post" onsubmit="return false;">
+                        <input type="text" name="_text" onkeydown="addToDo()" placeholder="What needs to be done?" autocomplete="off" id="inputtext">
+                    </form>
+                </th>
+                <th id="close">
+                    <p id="closebtn"></p>
+                </th>
+            </tr>
+        </table>
+    </body>
+</html>
